@@ -40,7 +40,7 @@
     }
 
     .glow-text {
-      text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+      text-shadow: 0 0 5px #edf0f3, 0 0 10px #90c2dc;
     }
 
     .typing::after {
@@ -58,10 +58,7 @@
       }
     }
 
-    .menu-icon {
-      font-size: 4rem;
-      display: none;
-    }
+    
 
     /* particles background */
     body {
@@ -83,6 +80,22 @@
       background-color: #0d0d0d;
       /* do NOT set pointer-events:none here because we want particle interactivity on window */
     }
+    .gradient-text {
+        font-size: 3rem;
+        font-weight: bold;
+        background: linear-gradient(270deg, #ff00cc, #333399, #00ffcc, #6e0e94);
+        background-size: 600% 600%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient-shift 5s ease infinite;
+        text-transform: uppercase;
+    }
+     @keyframes gradient-shift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
   </style>
 </head>
 
@@ -90,14 +103,14 @@
   <!-- Particle Background -->
   <div id="particles-js"></div>
 
-  <header class="flex justify-between px-6 py-4">
-    <h1 class="text-3xl  font-bold"> Mansi</h1>
+  <header class="flex justify-between px-6 py-4 ">
+    <h1 class="text-3xl  font-bold"> Mansi Kashyap </h1>
     <nav class="space-x-4">
-      <a href="#about" class="hover:text-cyan-400 transition duration-300">About</a>
-      <a href="#skills" class="hover:text-cyan-400 transition duration-300">Skills</a>
-      <a href="#projects" class="hover:text-cyan-400 transition duration-300">Projects</a>
-      <a href="#resume" class="hover:text-cyan-400 transition duration-300">Resume</a>
-      <a href="#contact" class="hover:text-cyan-400 transition duration-300">Contact</a>
+      <a href="#about" class="hover:text-cyan-400 transition duration-300 text-xl">About</a>
+      <a href="#skills" class="hover:text-cyan-400 transition duration-300 text-xl">Skills</a>
+      <a href="#projects" class="hover:text-cyan-400 transition duration-300 text-xl">Projects</a>
+      <a href="Mansi-cv.pdf" class="hover:text-cyan-400 transition duration-300 text-xl">Resume</a>
+      <a href="#contact" class="hover:text-cyan-400 transition duration-300 text-xl">Contact</a>
     </nav>
   </header>
 
@@ -110,7 +123,7 @@
     <div data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine" data-aos-duration="1000">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4 glow-text typing" id="typed">Hi, I'm Mansi — a Web Developer</h1>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 glow-text typing text-white" id="typed">Hi, I'm Mansi — a Web Developer</h1>
       <p class="text-lg max-w-xl">BCA Student | MERN Stack Learner | Passionate about designing creative user experiences</p>
 
       <!-- Button and Icons -->
@@ -122,10 +135,10 @@
         </a>
 
         <div class="flex space-x-4">
-          <a href="#"><i class="fa-brands fa-github text-cyan-900 hover:text-cyan-400 text-3xl transition duration-300 ease-in-out"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin text-cyan-900 hover:text-cyan-400 text-3xl transition duration-300 ease-in-out"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram text-cyan-900 hover:text-cyan-400 text-3xl transition duration-300 ease-in-out"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook text-cyan-900 hover:text-cyan-400 text-3xl transition duration-300 ease-in-out"></i></a>
+          <a href="https://github.com/mansi240504"><i class="fa-brands fa-github text-cyan-900 hover:text-cyan-400 text-3xl transition duration-300 ease-in-out"></i></a>
+          <a href="https://www.linkedin.com/in/mansi-kashyap-a258b42b8/"><i class="fa-brands fa-linkedin text-cyan-900 hover:text-cyan-400 text-3xl transition duration-300 ease-in-out"></i></a>
+          <!-- <a href="#"><i class="fa-brands fa-instagram text-cyan-900 hover:text-cyan-400 text-3xl transition duration-300 ease-in-out"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook text-cyan-900 hover:text-cyan-400 text-3xl transition duration-300 ease-in-out"></i></a> -->
         </div>
       </div>
     </div>
@@ -148,7 +161,7 @@
 
     <!-- Text Section -->
     <div class="max-w-xl text-left" >
-      <h2 class="text-3xl md:text-5xl dark:text-white font-bold mb-10 text-center" data-aos="fade-up">ABOUT ME</h2>
+      <h2 class="text-3xl md:text-5xl dark:text-white font-bold mb-10 text-center gradient-text" data-aos="fade-up">ABOUT ME</h2>
       <p class="text-lg leading-relaxed" data-aos="fade-left" data-aos-duration="1000">
         Hello! I'm <span class="text-cyan-600 font-semibold">Mansi Kashyap</span>, a passionate web developer currently pursuing my Bachelor's in Computer Applications. I specialize in building responsive and visually engaging websites using the <span
           class="font-semibold text-cyan-600">MERN stack</span>.
@@ -161,10 +174,10 @@
   </section>
 
   <!-- Skills Section -->
-  <div class="h-screen flex justify-center items-center " data-aos="fade-up">
+  <div class="h-screen flex justify-center items-center " data-aos="fade-up" id="skills">
     <div class="max-w-xl mx-auto w-full" >
 
-      <h4 class="text-3xl md:text-5xl dark:text-white font-bold mb-10">SKILLS</h4>
+      <h4 class="text-3xl md:text-5xl dark:text-white font-bold mb-10 gradient-text" >SKILLS</h4>
 
       <div class="mb-7" data-aos="flip-left" data-aos-duration="3000">
         <div class="flex justify-between py-1">
@@ -223,12 +236,12 @@
 
   <!-- Projects Section -->
   <section class="py-20 px-6 g-gray-50  text-gray-800 dark:text-white" id="projects" data-aos="fade-up">
-    <h4 class="text-3xl md:text-5xl dark:text-white font-bold mb-10 text-center">PROJECTS</h4>
+    <h4 class="text-3xl md:text-5xl dark:text-white font-bold mb-10 text-center gradient-text">PROJECTS</h4>
     <div class="grid md:grid-cols-2 gap-6">
       <div class="p-6 border border-cyan-600 rounded hover:bg-gray-700 transition bg-gray-800" data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="1500">
-        <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+        <a href="https://mansi240504.github.io/portfolio/#about" class="text-xl font-semibold mb-2">Portfolio Website</a>
         <p>A sleek and animated personal portfolio built with Tailwind CSS.</p>
       </div>
       <div class="p-6 border border-cyan-600 rounded hover:bg-gray-700 transition bg-gray-800" data-aos="fade-up"
@@ -242,7 +255,7 @@
   <!-- Contact Section -->
   <section id="contact" class="py-16 px-6 " data-aos="fade-up" >
     <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl md:text-5xl dark:text-white font-bold mb-10 text-center">CONTACT ME</h2>
+      <h2 class="text-3xl md:text-5xl dark:text-white font-bold mb-10 text-center gradient-text">CONTACT ME</h2>
       <p class="mb-12 text-lg">Have a question, project, or just want to say hi? Feel free to drop a message below!</p>
 
       <form action="https://formspree.io/f/yourformID" method="POST" class="grid gap-6 border p-8 rounded-xl border-cyan-900 " data-aos="fade-right"
